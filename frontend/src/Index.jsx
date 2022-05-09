@@ -19,7 +19,7 @@ class Index extends Component {
     }
 
     fetchData() {
-        return axios.get("https://cloudoblig2.herokuapp.com/");
+        return axios.get("https://cloudoblig2.herokuapp.com/app/");
     }
 
     fetchAirTemps() {
