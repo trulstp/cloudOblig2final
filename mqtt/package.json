@@ -1,0 +1,15 @@
+{
+  "name": "mqtt",
+  "version": "1.0.0",
+  "description": "IOT mqtt part",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"node broker.js\" \"node publisher.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Truls",
+  "license": "ISC",
+  "dependencies": {
+    "websocket-stream": "^5.5.2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "cloudoblig2",
+  "version": "1.0.0",
+  "description": "starting the mqtt and backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd mqtt && npm start\" \"cd backend && npm start\""
+  },
+  "author": "Truls",
+  "license": "ISC",
+  "dependencies": {
+    "aedes": "^0.46.3",
+    "concurrently": "^7.1.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.2",
+    "mqtt": "^4.3.7"
+  }
+}
