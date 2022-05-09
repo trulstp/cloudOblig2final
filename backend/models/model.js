@@ -1,19 +1,23 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const weatherSchema = new mongoose.Schema({
     topic: [
         {
             stationName: {
-                type:String
+                type: String,
             },
             timestamp: {
-                type:String
+                type: String,
             },
             airTemperature: {
-                type: Number
-            }
-        }
-    ]
-})
+                type: Number,
+            },
+        },
+    ],
+    date: {
+        type: Date,
+        default: Date.now,
+    },
+});
 
 module.exports = mongoose.model("weather", weatherSchema);
