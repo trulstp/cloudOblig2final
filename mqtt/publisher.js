@@ -393,5 +393,5 @@ client.on('connect', () => {
 })
 
 client.on('message', (topic, payload) => {
-    console.log('Recieved Message:', topic, JSON.parse(payload.toString()))
+    console.log('message send')
 })
