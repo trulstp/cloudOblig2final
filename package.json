@@ -4,7 +4,7 @@
   "description": "starting the mqtt and backend",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"cd mqtt && npm start\" \"cd backend && npm start\""
+    "start": "concurrently \"cd frontend && npm start\" \"cd mqtt && npm start\" \"cd backend && npm start\""
   },
   "author": "Truls",
   "license": "ISC",
