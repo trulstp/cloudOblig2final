@@ -22,5 +22,5 @@ client.on('connect', () => {
 
 client.on('message', (topic, payload) => {
   console.log('Recieved Message:', JSON.parse(payload.toString()))
-  axios.post('http://localhost:5000/app/', JSON.parse(payload.toString())).then((response) => console.log(response.data));
+  axios.post('http://cloudoblig2.herokuapp.com/app/', JSON.parse(payload.toString())).then((response) => console.log(response.data));
 })
