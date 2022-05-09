@@ -4,7 +4,7 @@
   "description": "IOT mqtt part",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"node broker.js\" \"node publisher.js\"",
+    "start": "concurrently \"node publisher.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Truls",
